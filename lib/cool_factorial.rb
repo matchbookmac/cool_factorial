@@ -1,6 +1,5 @@
 class Fixnum
   define_method(:cool_factorial) do
-
     if(self.<=(1))
       1
     else
