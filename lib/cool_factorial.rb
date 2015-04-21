@@ -1,14 +1,12 @@
 class Fixnum
   define_method(:cool_factorial) do
 
-    product = 1
-
-    mult_range = (1..self)
-    mult_range.each() do |number|
-      product = product.*(number)
+    if(self.eql?(0))
+      1
+    elsif(self.eql?(1))
+      1
+    else
+      self.-(1).cool_factorial.*(self)
     end
-
-    product
-
   end
 end
