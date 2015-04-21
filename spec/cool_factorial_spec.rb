@@ -1,5 +1,5 @@
 require('rspec')
-require('factorial')
+require('cool_factorial')
 
 describe('Fixnum#factorial') do
   it("Given a number, the method will return the factorial of that number") do
